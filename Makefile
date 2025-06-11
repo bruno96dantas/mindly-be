@@ -11,4 +11,4 @@ test:
 	go test ./...
 
 commit:
-	git cz
+	cz c
