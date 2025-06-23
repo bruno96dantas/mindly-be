@@ -1,11 +1,12 @@
-.PHONY: run lint test commit
+build:
+	@go build -o api cmd/main.go
 
 run:
-	@echo "Starting server with Air hot reload..."
+	@echo "Starting server..."
 	@air
 
 lint:
-	golangci-lint run
+	@golangci-lint run
 
 test:
 	go test ./...
